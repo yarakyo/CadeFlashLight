@@ -27,20 +27,19 @@
         android:gravity="center"/>
 
     <Button
-        android:id="@+id/closeButton"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="26dp"
-        android:text="Close" />
-
-    <Button
         android:id="@+id/LEDButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="Turn on Light" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Close" />
 
 </RelativeLayout>

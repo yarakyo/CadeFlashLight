@@ -72,10 +72,6 @@ public class LoadCamera extends Activity {
 				status.setText("Attempting to Close");
 				ResetCamera();
 				finish();
-				Intent intent = new Intent(Intent.ACTION_MAIN);
-				intent.addCategory(Intent.CATEGORY_HOME);
-				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-				startActivity(intent);
 			}
 		});
     }
@@ -130,32 +126,21 @@ public class LoadCamera extends Activity {
 
 
 	@Override
-	protected void onStop() {
-		super.onStop();
-
-		if (cam != null) {
-			cam.release();
-		}
-	}
-
-	@Override
-	protected void onDestroy() {
-		super.onDestroy();
-
-		if (cam != null) {
-			cam.release();
-		}
-	}
-
-	@Override
 	protected void onStart() {
 		super.onStart();		
 	}
-
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.activity_load_camera, menu);
 		return true;
 	}
+	
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		ResetCamera();
+		finish();
+	}
+		
 }

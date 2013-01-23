@@ -20,7 +20,7 @@ public class CadeSplash extends Activity {
 		Thread timer = new Thread(){
 			public void run(){
 			try{
-				SystemClock.sleep(500);		
+				SystemClock.sleep(100);		
 			}finally{
 				Intent CameraIntent = new Intent(CadeSplash.this,LoadCamera.class);
 				startActivity(CameraIntent);

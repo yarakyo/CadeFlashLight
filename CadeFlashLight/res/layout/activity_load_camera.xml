@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:text="LED Status" 
+        android:textColor="#FFFFFF"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewStatus"
+        android:layout_marginTop="24dp"
+        android:text="@string/welcomeMessage"
+        android:textColor="#FFFFFF" 
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:text="Close" />
+
+    <Button
+        android:id="@+id/LEDButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Turn on Light" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">FlashLight</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Cade_Software">Cade Software</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_cade">Cades Flashlight</string>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <string name="title_activity_load_camera">Flash Light Control</string>
+    <string name="title_activity_closeapp">Closing</string>
+    <string name="title_activity_cade_splash">CadeSoftware</string>
+    <string name="welcomeMessage">Cade might be merciless but he might not be able to see, use this app to find things.</string>
+
+</resources>
